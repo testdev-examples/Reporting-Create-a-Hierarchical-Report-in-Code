@@ -7,7 +7,7 @@ Imports System.Windows.Forms
 
 Namespace CreateHierarchicalReportInCode
     Friend Class Program
-        <STAThread> _
+        <STAThread>
         Shared Sub Main(ByVal args() As String)
             Dim report As XtraReport = ReportCreator.CreateHierarchicalReport()
 
