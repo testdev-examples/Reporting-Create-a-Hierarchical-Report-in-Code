@@ -129,8 +129,8 @@ namespace CreateHierarchicalReportInCode {
             SvgImage uncheckedSvg = SvgImage.FromResources("CreateHierarchicalReportInCode.Collapsed.svg", typeof(ReportCreator).Assembly);
             expandButton.GlyphOptions.Alignment = HorzAlignment.Center;
             expandButton.GlyphOptions.Size = new SizeF(16, 16);
-            expandButton.GlyphOptions.CustomGlyphs[CheckState.Checked] = new ImageSource(checkedSvg);
-            expandButton.GlyphOptions.CustomGlyphs[CheckState.Unchecked] = new ImageSource(uncheckedSvg);
+            expandButton.GlyphOptions.CustomGlyphs[CheckBoxState.Checked] = new ImageSource(checkedSvg);
+            expandButton.GlyphOptions.CustomGlyphs[CheckBoxState.Unchecked] = new ImageSource(uncheckedSvg);
             detailBand.DrillDownControl = expandButton;
             detailBand.DrillDownExpanded = false;
 
