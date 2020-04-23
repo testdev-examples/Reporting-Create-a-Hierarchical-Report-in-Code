@@ -6,13 +6,13 @@ Imports System.Threading.Tasks
 Imports System.Windows.Forms
 
 Namespace CreateHierarchicalReportInCode
-    Friend Class Program
-        <STAThread> _
-        Shared Sub Main(ByVal args() As String)
-            Dim report As XtraReport = ReportCreator.CreateHierarchicalReport()
+	Friend Class Program
+		<STAThread>
+		Shared Sub Main(ByVal args() As String)
+			Dim report As XtraReport = ReportCreator.CreateHierarchicalReport()
 
-            Dim printTool As New ReportPrintTool(report)
-            printTool.ShowRibbonPreviewDialog()
-        End Sub
-    End Class
+			Dim printTool As New ReportPrintTool(report)
+			printTool.ShowRibbonPreviewDialog()
+		End Sub
+	End Class
 End Namespace
